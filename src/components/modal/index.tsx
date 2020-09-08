@@ -14,7 +14,7 @@ export const FormDialog: React.FC = () => {
   const { openModal, closeModal, state } = useContext(ModalContext)
   const { validateUser, submitForm } = useUser()
 
-  const { clearForm, statusSubmit, status, error } = useForm()
+  const { clearForm, statusSubmit, status } = useForm()
 
   const showModal = () => {
     clearForm()
@@ -25,15 +25,12 @@ export const FormDialog: React.FC = () => {
   const submit = async () => {
     if (validateUser()) {
       await submitForm()
-      if (!error) {
-        closeModal()
-      }
     }
   }
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={showModal}>
+      <Button variant="outlined" onClick={showModal}>
         <AccountCircle /> Novo Usuário
       </Button>
       <Dialog

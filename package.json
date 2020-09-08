@@ -17,6 +17,7 @@
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-nextjs-toast": "^1.2.5",
     "react-toastify": "^6.0.8",
     "styled-components": "^5.1.1"
   },

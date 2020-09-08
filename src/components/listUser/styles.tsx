@@ -11,7 +11,7 @@ const WrapperIcone = styled.span`
   justify-content: center;
   justify-items: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 3px;
   font-size: 18px;
   font-weight: bold;
   transition: 400ms;

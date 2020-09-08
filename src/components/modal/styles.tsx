@@ -7,7 +7,7 @@ const Container = styled.div`
   justify-items: center;
   align-items: center;
   background-color: ${(props: any) =>
-    props.status === 'create' ? '#376288' : '#e29013'};
+    props.status === 'create' ? '#5d5957' : '#ab501b'};
   padding: 25px;
   color: white;
 `
